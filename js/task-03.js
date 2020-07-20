@@ -5,14 +5,14 @@
 
 const findBestEmployee = function (employees) {
   let maxValue = 0;
-  let name = " ";
+  let bestEmployee;
   for (const key in employees) {
     if (employees[key] > maxValue) {
       maxValue = employees[key];
-      name = key;
+      bestEmployee = key;
     }
   }
-  return name;
+  return bestEmployee;
 };
 
 console.log(
